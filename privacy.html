@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#0f2a44" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f2a44" />
+  
+  <link rel="icon" type="image/png" href="https://i.ibb.co.com/WNgFp3Nr/40e2900fa00898bd13b91ceefd4d5d09.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <title>BN - Privacy</title>
+
+  <!-- CSS Config -->
+  <link rel="stylesheet" href="css/privacy.css">
+
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="lang-switcher">
+    <button class="lang-btn active" onclick="setLang('id')">🇮🇩 ID</button>
+    <span class="lang-sep">|</span>
+    <button class="lang-btn" onclick="setLang('en')">🇬🇧 EN</button>
+    <span class="lang-sep">|</span>
+    <button class="lang-btn" onclick="setLang('jp')">🇯🇵 JP</button>
+  </div>
+  <a class="back-btn" href="javascript:history.back()">
+    <span data-i18n="back">Kembali</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+  </a>
+</div>
+
+<header class="page-header">
+  <span class="page-eyebrow">🔵 BN 🔵 &nbsp;·&nbsp; Privacy Policy</span>
+  <h1>Privacy <span>Policy</span></h1>
+  <p class="meta" data-i18n="lastUpdated">Terakhir diperbarui: 23 Mei 2026</p>
+</header>
+
+<div id="main-content">
+  <main class="content-wrap">
+    <div class="toc">
+      <p class="toc-title" data-i18n="tocTitle">Daftar Isi</p>
+      <ol id="toc-list"></ol>
+    </div>
+    <div class="highlight-box" style="margin-bottom:32px; animation: fadeUp 0.6s 0.38s ease both;">
+      <p id="global-notice-text" data-i18n="globalNotice">📌 Dokumen ini menjelaskan bagaimana BN Server mengumpulkan, menggunakan, dan melindungi data pengguna.</p>
+    </div>
+    <div id="sections-container"></div>
+  </main>
+
+
+</div>
+
+<!-- JS Config -->
+<script src="js/privacy.js"></script>
+
+<!-- Tracking Config -->
+<script src="tracker.js"></script>
+
+</body>
+</html>
