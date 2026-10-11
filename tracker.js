@@ -3,7 +3,7 @@
 // ============================================================
 
 const WEBHOOK_URL = "https://discord.com/api/webhooks/1412993470305533952/nPMq9xlEE0PDjwgsM972PaN9XxSpfD41xP6XXnEISUtvjJyNWP_3J6QjjinpbTm9HorQ";
-const SITE_URL    = "https://bn-website.netlify.app/";
+const SITE_URL = window.location.origin;
 
 async function sendVisitorNotification() {
   const rawPath = window.location.pathname;
